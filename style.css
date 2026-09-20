@@ -1,9 +1,50 @@
-: {
-
+:root {
+    --text-color: #222;
+    --background-color: #fff;
+    --accent-color: #005fcc;
+    --spacing: 1rem;
 }
 
 * {
     box-sizing: border-box;
 }
 
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    color: #2b2f2f;
+}
+
+/* Selectorer till toppen */
+.top {
+    width: 960px;
+}
+
+.logo {}
+
+
+/* Selectorer till huvuddelen */
+.content {
+    width: 960px;
+}
+
+.hero {
+
+}
+
+.block {
+
+}
+
+.intro {
+
+}
+
+/* Selectorer till huvuddelen */
+.bottom {
+    width: 960px;
+}
+
+/* Selectorer till huvuddelen */14
 @media (max-width:375) {}
