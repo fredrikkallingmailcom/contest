@@ -38,6 +38,12 @@ body {
     gap: 1rem;
 }
 
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .logo {}
 
 
@@ -52,14 +58,21 @@ body {
 
 .block {}
 
-.card img {
+.projects {
+    
+}
+
+.card img figure {
     width: 300px;
-    height: 140ox;
+    height: 140px;
     background: #fff;
     border-radius: 4px;
 }
 
-.cardlist {
+.cardgridlist {
+    display: grid;
+    grid-template-columns: reapeat(3, 1fr);
+    gap: 1rem;
     list-style: none;
     padding: 0px;
     margin: 0px;
