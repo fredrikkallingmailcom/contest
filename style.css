@@ -63,14 +63,17 @@ body {
 
 .projects {}
 
-.card {
-
-}
+.card {}
 
 .flowLayout {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1px;
+}
+
+.textColumn {
+    display: flex;
+    flex-direction: column;
 }
 
 .card img {
