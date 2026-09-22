@@ -34,8 +34,11 @@ body {
 /* Selectorer till toppen */
 .header .container {
     display: flex;
-    flex-dire: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .main-nav {
@@ -58,20 +61,37 @@ body {
 
 .block {}
 
-.projects {
-    
+.projects {}
+
+.card {
+
 }
 
-.card img figure {
-    width: 300px;
+.flowLayout {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.card img {
+    width: 100px;
+    max-width: 300px;
     height: 140px;
     background: #fff;
     border-radius: 4px;
 }
 
+.hidden {
+    display: none;
+}
+
+.card figure {
+    margin: 0;
+}
+
 .cardgridlist {
     display: grid;
-    grid-template-columns: reapeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     list-style: none;
     padding: 0px;
@@ -86,4 +106,14 @@ body {
 }
 
 /* Selectorer till huvuddelen */
-@media (max-width:375) {}
+@media (max-width: 900px) {
+    .cardgridlist {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cardgridlist {
+        grid-template-columns: 1fr;
+    }
+}
